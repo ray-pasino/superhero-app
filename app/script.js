@@ -5,6 +5,10 @@ const HeroImageDiv = document.getElementById('heroImage')
 const searchButton = document.getElementById('searchButton')
 const searchInput = document.getElementById('searchInput')
 
+
+
+
+
 const getSuperHero = (id, name) => {
     //name 👉 base_url/search/batman
     //json.results[0].image.url
@@ -33,7 +37,7 @@ const statToEmoji = {
 const showHeroInfo = (character) => {
     const name = `<h2>${character.name}</h2>`
 
-    const img = `<img src="${character.image.url}" height="200" width="200"/>`
+    const img = `<img src="${character.image.url}" height="200" width="200" style = "border:10px solid #ffff;"/>`
 
    const stats = Object.keys(character.powerstats).map(stat => {
        return `<p>${statToEmoji[stat]}${stat.toUpperCase()}: ${character.powerstats[stat]}</p>`
@@ -41,7 +45,9 @@ const showHeroInfo = (character) => {
 
     
     HeroImageDiv.innerHTML =  `${name}${img}${stats}`
+    
 
+    
 }
 
 
