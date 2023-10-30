@@ -58,8 +58,10 @@ const getSearchSuperhero = (name) =>{
 
 
 const RandomHero = () => {
+    searchInput.value = " "
     const numberOfHeros = 731
     return  Math.floor(Math.random() * numberOfHeros) + 1
+
 }
 
 newHeroButton.onclick = () =>    getSuperHero(RandomHero())  
