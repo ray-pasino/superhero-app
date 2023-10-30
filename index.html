@@ -7,7 +7,8 @@
 
 
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+    /* @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap'); */
+    @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;400&family=Ubuntu+Mono&display=swap');
 
         body{
 
@@ -19,15 +20,61 @@
         h2{
             font-family: 'Playpen Sans', cursive;
         }
-
         p{
+            font-weight: 600;
+            font-family: 'Ubuntu Mono', monospace;
+            font-size: 40px;
+            
+            
+        }
+        p1{
             font-family: sans-serif;
+            font-family: 'Ubuntu Mono', monospace;
+        }
+
+        input{
+            margin-top: 10px;
+            border-radius: 12px;
+            width: 200px;
+            height: 30px;
+            outline: none ;
+        }
+
+        #searchButton{
+
+            padding: 10px;
+            /* right side */
+            border-top-right-radius:22px;
+            border-bottom-right-radius: 22px;
+            /* lef side */
+            border-top-left-radius: 22px;            
+        }
+
+        #newHeroButton{
+            margin-top: 20px;
+            padding: 10px;
+            
+             /* right side */
+            border-top-right-radius:22px;
+            border-bottom-right-radius: 22px;
+            /* lef side */
+            border-top-left-radius: 22px;
+            font-size: 24px;
+            font-family: 'Playpen Sans', cursive;
+            cursor: pointer;
+            
+        }
+
+        @media screen and (min-width:576px) {
+            p{
+                font-size: 10px;
+            }
         }
     </style>
 </head>
     <body>
     <h2>🌟 Super Hero App</h2>
-    <p>You can search for a super hero like "batman" or "thanos" or... You can generate a random hero</p>
+    <p1>You can search for a super hero like "batman" or "thanos" or... You can generate a random hero</p1><br>
     <input type="text" id="searchInput">
     <button id="searchButton">search</button><br>
     <button id="newHeroButton">Random Hero</button><br>
@@ -35,3 +82,4 @@
     <script src="app/script.js"></script>
 </body>
 </html>
+
